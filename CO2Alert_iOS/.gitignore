@@ -1,0 +1,70 @@
+# macOS
+.DS_Store
+
+# Xcode
+build/
+DerivedData/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+
+# Swift Package Manager
+.build/
+Packages/
+Package.resolved
+
+# CocoaPods
+Pods/
+
+# Carthage
+Carthage/Build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+fastlane/test_output/
+
+# Archives
+*.xcarchive
+
+# Simulator
+*.simruntime
+
+# Logs
+*.log
+
+# Secrets
+Secrets.plist
+Config/Secrets.swift
+.env
+.env.local
+
+# API Keys
+GoogleService-Info.plist
+firebase.json
+
+# CoreML generated
+*.mlmodelc
+
+# Temporary
+*.tmp
+*.swp
+
+# VS Code
+.vscode/
+
+# JetBrains
+.idea/
+
+# Upload files
+*.zip

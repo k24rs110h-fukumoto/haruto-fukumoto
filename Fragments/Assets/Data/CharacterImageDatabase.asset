@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a51e58bb6681445c68a2addf25c6e78f, type: 3}
+  m_Name: CharacterImageDatabase
+  m_EditorClassIdentifier: 
+  characterImages:
+  - iconNumber: 0
+    standingImage: {fileID: -1368578077799001809, guid: cfe65a2e0206c4ce8b53a0025cbf02c5, type: 3}
+    downSprite: {fileID: 2410635517405602792, guid: aeed0666baf004bda93019677360fb04, type: 3}
+    upSprite: {fileID: 3277083016235168230, guid: aeed0666baf004bda93019677360fb04, type: 3}
+    leftSprite: {fileID: 2346985171832416266, guid: aeed0666baf004bda93019677360fb04, type: 3}
+    rightSprite: {fileID: -5795127981270333954, guid: aeed0666baf004bda93019677360fb04, type: 3}
+  - iconNumber: 1
+    standingImage: {fileID: 4738705760043661119, guid: 667f600984a06454fbb5309d5cdcaa37, type: 3}
+    downSprite: {fileID: -7943720702334105097, guid: 605491c51d40a47809bb6fb2a6435841, type: 3}
+    upSprite: {fileID: -9024499382059934703, guid: 605491c51d40a47809bb6fb2a6435841, type: 3}
+    leftSprite: {fileID: 7054998175782590189, guid: 605491c51d40a47809bb6fb2a6435841, type: 3}
+    rightSprite: {fileID: 6538127205265311003, guid: 605491c51d40a47809bb6fb2a6435841, type: 3}
+  - iconNumber: 2
+    standingImage: {fileID: -6164794191868243387, guid: d0fe8f1f2ace5494da6874a233f1ccb3, type: 3}
+    downSprite: {fileID: -2494442190302250955, guid: ceb577a6dab694b119b493b670d3b5c2, type: 3}
+    upSprite: {fileID: -7713359899473670213, guid: ceb577a6dab694b119b493b670d3b5c2, type: 3}
+    leftSprite: {fileID: -2429302156904442033, guid: ceb577a6dab694b119b493b670d3b5c2, type: 3}
+    rightSprite: {fileID: -202923417094733400, guid: ceb577a6dab694b119b493b670d3b5c2, type: 3}
+  - iconNumber: 3
+    standingImage: {fileID: -4186632806901556356, guid: 525f4083111bd4bc1a0e7d2bcd1103bf, type: 3}
+    downSprite: {fileID: 1929640009269163551, guid: de6d0913a7d614447b8da0f8d2816bb1, type: 3}
+    upSprite: {fileID: 5727047444682626177, guid: de6d0913a7d614447b8da0f8d2816bb1, type: 3}
+    leftSprite: {fileID: 6823285018774640604, guid: de6d0913a7d614447b8da0f8d2816bb1, type: 3}
+    rightSprite: {fileID: 7453030149638444847, guid: de6d0913a7d614447b8da0f8d2816bb1, type: 3}

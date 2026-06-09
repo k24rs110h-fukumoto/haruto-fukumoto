@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f93d84b9d92374815a039875cd98bbbe, type: 3}
+  m_Name: EN010
+  m_EditorClassIdentifier: 
+  enemyID: EN010
+  enemyName: "\u30DE\u30C3\u30C9\u30B4\u30FC\u30EC\u30E0"
+  description: "\u6CE5\u3068\u5CA9\u3067\u3067\u304D\u305F\u9811\u4E08\u306A\u9B54\u7269\u3002"
+  icon: {fileID: 0}
+  battleImage: {fileID: -8418954621723318745, guid: 02a4f8581d06a408c8885f0bf53d74e8, type: 3}
+  maxHp: 160
+  attack: 38
+  defense: 24
+  expReward: 120
+  speed: 5
+  goldReward: 70
+  dropItem: {fileID: 0}
+  dropRate: 0.1
+  element: 3
+  baseLevel: 12

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb15571697bb64c7e853c4b922655ba7, type: 3}
+  m_Name: I009
+  m_EditorClassIdentifier: 
+  itemID: I009
+  itemName: "\u9B54\u529B\u7206\u5F3E"
+  description: "\u65751\u4F53\u306B\u5927\u30C0\u30E1\u30FC\u30B8\u3092\u4E0E\u3048\u308B\u3002"
+  icon: {fileID: 0}
+  itemType: 1
+  rarity: 3
+  equipmentType: 0
+  behindDescription: "\u5727\u7E2E\u3057\u305F\u9B54\u529B\u3092\u7206\u767A\u3055\u305B\u308B\u5371\u967A\u7269\u3002"
