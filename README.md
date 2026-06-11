@@ -27,6 +27,8 @@ My goal is to create technologies that improve user experiences through software
 - TypeScript
 - PHP
 - SQL
+- HTML
+- CSS
 
 ## Frameworks
 
@@ -64,6 +66,10 @@ Game support web application for Whiteout Survival.
 Tech:
 Next.js, Django REST Framework, Firebase
 
+<p align="center">
+<img src="https://github.com/user-attachments/assets/f0f12a08-8344-4d26-bfc6-6a4d796ce761" width="700">
+</p>
+
 ---
 
 ## CO2 Alert System
@@ -80,6 +86,11 @@ AI-assisted environmental monitoring system.
 Tech:
 SwiftUI, Python, FastAPI, Machine Learning
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ee9137e6-2401-40a9-8e0e-197ca8d7c1d0" width="250">
+  <img src="https://github.com/user-attachments/assets/52bfde85-b742-423d-b34a-120146f4e20b" width="250">
+</p>
+
 ---
 
 ## Calendar App
@@ -94,6 +105,12 @@ Personal schedule management application.
 
 Tech:
 SwiftUI MySQL Apache
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/588ce43a-de5e-464b-8e95-82ae9d150f5b" width="220">
+  <img src="https://github.com/user-attachments/assets/30975a37-ee0d-482a-94ff-f4b5791fad84" width="220">
+  <img src="https://github.com/user-attachments/assets/09900f57-6186-4c0c-a7bc-7ea06adb3881" width="220">
+</p>
 
 ---
 
@@ -110,7 +127,13 @@ Original 2D pixel RPG currently under development.
 - Enemy AI
 
 Tech:
-Unity, C#
+Unity, C#, Sentis
+
+https://github.com/user-attachments/assets/949790c7-836a-4cc3-b4cf-ff105cc2fb6b
+
+
+https://github.com/user-attachments/assets/49554333-f56e-4046-b6ad-5b8c54f2e968
+
 
 ---
 
@@ -130,4 +153,5 @@ GitHub:
 https://github.com/k24rs110h-fukumoto
 
 Email:
-Available upon request.
+k24rs110@st.kyusan-u.ac.jp
+runoaima98@gmail.com
