@@ -66,6 +66,9 @@ Game support web application for Whiteout Survival.
 Tech:
 Next.js, Django REST Framework, Firebase
 
+Web Link:
+https://whiteout-survival-tools.vercel.app/
+
 <p align="center">
 <img src="https://github.com/user-attachments/assets/f0f12a08-8344-4d26-bfc6-6a4d796ce761" width="700">
 </p>
