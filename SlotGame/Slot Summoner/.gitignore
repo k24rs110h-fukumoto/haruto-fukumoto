@@ -1,0 +1,108 @@
+# Unity
+
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+UserSettings/
+MemoryCaptures/
+
+# Unity generated
+
+sysinfo.txt
+*.tmp
+*.bak
+*.backup
+*.log
+
+# Visual Studio / VSCode
+
+.vscode/
+.idea/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Rider
+
+.idea/
+
+# macOS
+
+.DS_Store
+
+# Windows
+
+Thumbs.db
+
+# Build files
+
+*.apk
+*.aab
+*.unitypackage
+*.app
+*.ipa
+
+# iOS
+
+DerivedData/
+
+# Android
+
+.gradle/
+*.keystore
+
+# Burst Compiler
+
+burst_debug_information_do_not_ship/
+
+# Addressables
+
+ServerData/
+Assets/AddressableAssetsData/*/*.bin*
+
+# Crash reports
+
+crashlytics-build.properties
+
+# Auto generated TMP
+
+Assets/TextMesh Pro/Resources/Fonts & Materials/*.asset
+
+# Ignore recordings
+
+Recordings/
+
+# Ignore captures
+
+Captures/
+
+# Ignore test builds
+
+TestBuild/
+
+# Ignore local save data
+
+*.save
+*.sav
+
+# Ignore cache
+
+Cache/
+
+# Ignore Unity autosaves
+
+*.autosave

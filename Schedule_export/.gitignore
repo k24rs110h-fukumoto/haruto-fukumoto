@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+.env
+
+# macOS
+.DS_Store
+
+# VSCode
+.vscode/
+
+# Python cache
+.pytest_cache/
+.mypy_cache/
+
+# Output files
+output/*.json
+output/*.txt
+
+# Temporary files
+*.log
+
+# pdf
+input/*.pdf
