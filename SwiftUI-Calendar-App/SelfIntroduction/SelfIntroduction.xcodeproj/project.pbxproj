@@ -7,32 +7,32 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		64E670C42FC7558700C92074 /* CO2Alert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CO2Alert.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64826CE62F9B4803008C0D82 /* SelfIntroduction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SelfIntroduction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		64E6714F2FC9938F00C92074 /* Exceptions for "CO2Alert" folder in "CO2Alert" target */ = {
+		647AC79F2FA0BFA900F87E32 /* Exceptions for "SelfIntroduction" folder in "SelfIntroduction" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 64E670C32FC7558600C92074 /* CO2Alert */;
+			target = 64826CE52F9B4803008C0D82 /* SelfIntroduction */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		64E670C62FC7558700C92074 /* CO2Alert */ = {
+		64826CE82F9B4803008C0D82 /* SelfIntroduction */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				64E6714F2FC9938F00C92074 /* Exceptions for "CO2Alert" folder in "CO2Alert" target */,
+				647AC79F2FA0BFA900F87E32 /* Exceptions for "SelfIntroduction" folder in "SelfIntroduction" target */,
 			);
-			path = CO2Alert;
+			path = SelfIntroduction;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		64E670C12FC7558600C92074 /* Frameworks */ = {
+		64826CE32F9B4803008C0D82 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,18 +42,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		64E670BB2FC7558600C92074 = {
+		64826CDD2F9B4803008C0D82 = {
 			isa = PBXGroup;
 			children = (
-				64E670C62FC7558700C92074 /* CO2Alert */,
-				64E670C52FC7558700C92074 /* Products */,
+				64826CE82F9B4803008C0D82 /* SelfIntroduction */,
+				64826CE72F9B4803008C0D82 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		64E670C52FC7558700C92074 /* Products */ = {
+		64826CE72F9B4803008C0D82 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				64E670C42FC7558700C92074 /* CO2Alert.app */,
+				64826CE62F9B4803008C0D82 /* SelfIntroduction.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,64 +61,64 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		64E670C32FC7558600C92074 /* CO2Alert */ = {
+		64826CE52F9B4803008C0D82 /* SelfIntroduction */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 64E670CF2FC7558800C92074 /* Build configuration list for PBXNativeTarget "CO2Alert" */;
+			buildConfigurationList = 64826CF12F9B4805008C0D82 /* Build configuration list for PBXNativeTarget "SelfIntroduction" */;
 			buildPhases = (
-				64E670C02FC7558600C92074 /* Sources */,
-				64E670C12FC7558600C92074 /* Frameworks */,
-				64E670C22FC7558600C92074 /* Resources */,
+				64826CE22F9B4803008C0D82 /* Sources */,
+				64826CE32F9B4803008C0D82 /* Frameworks */,
+				64826CE42F9B4803008C0D82 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				64E670C62FC7558700C92074 /* CO2Alert */,
+				64826CE82F9B4803008C0D82 /* SelfIntroduction */,
 			);
-			name = CO2Alert;
+			name = SelfIntroduction;
 			packageProductDependencies = (
 			);
-			productName = CO2Alert;
-			productReference = 64E670C42FC7558700C92074 /* CO2Alert.app */;
+			productName = SelfIntroduction;
+			productReference = 64826CE62F9B4803008C0D82 /* SelfIntroduction.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		64E670BC2FC7558600C92074 /* Project object */ = {
+		64826CDE2F9B4803008C0D82 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 2650;
-				LastUpgradeCheck = 2650;
+				LastSwiftUpdateCheck = 2640;
+				LastUpgradeCheck = 2640;
 				TargetAttributes = {
-					64E670C32FC7558600C92074 = {
-						CreatedOnToolsVersion = 26.5;
+					64826CE52F9B4803008C0D82 = {
+						CreatedOnToolsVersion = 26.4.1;
 					};
 				};
 			};
-			buildConfigurationList = 64E670BF2FC7558600C92074 /* Build configuration list for PBXProject "CO2Alert" */;
+			buildConfigurationList = 64826CE12F9B4803008C0D82 /* Build configuration list for PBXProject "SelfIntroduction" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 64E670BB2FC7558600C92074;
+			mainGroup = 64826CDD2F9B4803008C0D82;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 64E670C52FC7558700C92074 /* Products */;
+			productRefGroup = 64826CE72F9B4803008C0D82 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				64E670C32FC7558600C92074 /* CO2Alert */,
+				64826CE52F9B4803008C0D82 /* SelfIntroduction */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		64E670C22FC7558600C92074 /* Resources */ = {
+		64826CE42F9B4803008C0D82 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -128,7 +128,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		64E670C02FC7558600C92074 /* Sources */ = {
+		64826CE22F9B4803008C0D82 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -138,7 +138,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		64E670CD2FC7558800C92074 /* Debug */ = {
+		64826CEF2F9B4805008C0D82 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -200,7 +200,7 @@
 			};
 			name = Debug;
 		};
-		64E670CE2FC7558800C92074 /* Release */ = {
+		64826CF02F9B4805008C0D82 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -254,7 +254,7 @@
 			};
 			name = Release;
 		};
-		64E670D02FC7558800C92074 /* Debug */ = {
+		64826CF22F9B4805008C0D82 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -267,7 +267,8 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CO2Alert/Info.plist;
+				INFOPLIST_FILE = SelfIntroduction/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Schedules;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -278,12 +279,12 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 26.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Swift-project.CO2Alert";
+				MACOSX_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.ac.kyusan-u.Schedules";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
@@ -295,11 +296,11 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				XROS_DEPLOYMENT_TARGET = 26.5;
+				XROS_DEPLOYMENT_TARGET = 26.4;
 			};
 			name = Debug;
 		};
-		64E670D12FC7558800C92074 /* Release */ = {
+		64826CF32F9B4805008C0D82 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -312,7 +313,8 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CO2Alert/Info.plist;
+				INFOPLIST_FILE = SelfIntroduction/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Schedules;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -323,12 +325,12 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 26.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Swift-project.CO2Alert";
+				MACOSX_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.ac.kyusan-u.Schedules";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
@@ -340,32 +342,32 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				XROS_DEPLOYMENT_TARGET = 26.5;
+				XROS_DEPLOYMENT_TARGET = 26.4;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		64E670BF2FC7558600C92074 /* Build configuration list for PBXProject "CO2Alert" */ = {
+		64826CE12F9B4803008C0D82 /* Build configuration list for PBXProject "SelfIntroduction" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				64E670CD2FC7558800C92074 /* Debug */,
-				64E670CE2FC7558800C92074 /* Release */,
+				64826CEF2F9B4805008C0D82 /* Debug */,
+				64826CF02F9B4805008C0D82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		64E670CF2FC7558800C92074 /* Build configuration list for PBXNativeTarget "CO2Alert" */ = {
+		64826CF12F9B4805008C0D82 /* Build configuration list for PBXNativeTarget "SelfIntroduction" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				64E670D02FC7558800C92074 /* Debug */,
-				64E670D12FC7558800C92074 /* Release */,
+				64826CF22F9B4805008C0D82 /* Debug */,
+				64826CF32F9B4805008C0D82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 64E670BC2FC7558600C92074 /* Project object */;
+	rootObject = 64826CDE2F9B4803008C0D82 /* Project object */;
 }
