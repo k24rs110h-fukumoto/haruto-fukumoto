@@ -1,72 +1,66 @@
-# Haruto Fukumoto
+# 福本 陽翔 (Haruto Fukumoto)
 
-## About Me
+# 自己紹介
 
-I'm an undergraduate student majoring in Computer Science with a strong interest in game development and AI technologies.
+情報科学を専攻する大学生です。ゲーム開発とAI技術に興味を持ち、Unityを中心としたゲーム制作をはじめ、WebアプリケーションやiOSアプリケーションの開発、AIを活用したシステム開発に取り組んでいます。
 
-I develop applications and systems across multiple platforms, including:
-
-- Unity game development
-- iOS application development (SwiftUI)
-- AI and machine learning
-- Web application development
-- Data analysis and visualization
-
-My goal is to create technologies that improve user experiences through software and interactive systems.
+「ユーザーにとって使いやすく、価値のあるシステムを作ること」を目標に、さまざまな分野の技術を組み合わせた開発を行っています。
 
 ---
 
-# Skills
+# スキル
 
-## Languages
+## プログラミング言語
 
-- C#
-- Swift
-- Python
-- JavaScript
-- TypeScript
-- PHP
-- SQL
-- HTML
-- CSS
+* C#
+* Swift
+* Python
+* JavaScript
+* TypeScript
+* PHP
+* SQL
+* HTML
+* CSS
 
-## Frameworks
+## フレームワーク・開発環境
 
-- Unity
-- SwiftUI
-- Django
-- React
-- Next.js
-- FastAPI
+* Unity
+* SwiftUI
+* Django
+* React
+* Next.js
+* FastAPI
 
-## Tools
+## 使用ツール
 
-- Git / GitHub
-- Firebase
-- SQLite
-- MySQL
-- Xcode
-- Visual Studio Code
+* Git / GitHub
+* Firebase
+* SQLite
+* MySQL
+* Xcode
+* Visual Studio Code
 
 ---
 
-# Projects
+# 制作実績
 
-## Whiteout Survival Tools
+## Whiteout Survival 攻略支援ツール
 
-Game support web application for Whiteout Survival.
+人気ゲーム「Whiteout Survival」の攻略を支援するWebアプリケーションです。
 
-### Features
+### 主な機能
 
-- Resource calculators
-- Hero equipment calculations
-- Upgrade support tools
-- Responsive web interface
+* 資源計算ツール
+* 英雄装備計算
+* 強化素材計算
+* レスポンシブデザイン対応
 
-Tech:
-Next.js, Django REST Framework, Firebase
+### 使用技術
 
-Web Link:
+Next.js / Django REST Framework / Firebase
+
+### Webサイト
+
 https://whiteout-survival-tools.vercel.app/
 
 <p align="center">
@@ -75,19 +69,20 @@ https://whiteout-survival-tools.vercel.app/
 
 ---
 
-## CO2 Alert System
+## CO2アラートシステム
 
-AI-assisted environmental monitoring system.
+AIを活用した環境モニタリングシステムです。
 
-### Features
+### 主な機能
 
-- CO2 data visualization
-- Future prediction
-- Heatstroke prevention support
-- iPhone application
+* CO2濃度の可視化
+* 将来予測
+* 熱中症対策支援
+* iPhoneアプリとの連携
 
-Tech:
-SwiftUI, Python, FastAPI, Machine Learning
+### 使用技術
+
+SwiftUI / Python / FastAPI / 機械学習
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/ee9137e6-2401-40a9-8e0e-197ca8d7c1d0" width="250">
@@ -96,18 +91,19 @@ SwiftUI, Python, FastAPI, Machine Learning
 
 ---
 
-## Calendar App
+## スケジュール管理アプリ
 
-Personal schedule management application.
+日々の予定管理を目的としたアプリケーションです。
 
-### Features
+### 主な機能
 
-- Calendar interface
-- Schedule management
-- Notification system
+* カレンダー表示
+* 予定の登録・管理
+* 通知機能
 
-Tech:
-SwiftUI MySQL Apache
+### 使用技術
+
+SwiftUI / MySQL / Apache
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/588ce43a-de5e-464b-8e95-82ae9d150f5b" width="220">
@@ -117,44 +113,46 @@ SwiftUI MySQL Apache
 
 ---
 
-## Unity RPG Project
+## Unity RPGプロジェクト
 
-Original 2D pixel RPG currently under development.
+現在開発中のオリジナル2DピクセルRPGです。
 
-### Features
+### 主な機能
 
-- Turn-based battle system
-- Character growth
-- Magic system
-- Inventory management
-- Enemy AI
+* ターン制バトル
+* キャラクター育成
+* 魔法システム
+* インベントリ管理
+* 敵AI
 
-Tech:
-Unity, C#, Sentis
+### 使用技術
+
+Unity / C# / Unity Sentis
 
 https://github.com/user-attachments/assets/949790c7-836a-4cc3-b4cf-ff105cc2fb6b
 
 
 https://github.com/user-attachments/assets/49554333-f56e-4046-b6ad-5b8c54f2e968
 
+---
+
+# 研究分野・興味
+
+* ゲーム開発におけるAI活用
+* AI超解像技術
+* ゲームレンダリング最適化
+* 機械学習
+* インタラクティブシステム
+
+現在は、Unityプロジェクトの構造を解析し、ゲーム開発の効率化を支援するシステムの研究にも取り組んでいます。
 
 ---
 
-# Research Interests
+# 連絡先
 
-- AI for Game Development
-- AI Super Resolution
-- Game Rendering Optimization
-- Machine Learning
-- Interactive Systems
-
----
-
-# Contact
-
-GitHub:
+GitHub
 https://github.com/k24rs110h-fukumoto
 
-Email:
-k24rs110@st.kyusan-u.ac.jp
-runoaima98@gmail.com
+Email
+[k24rs110@st.kyusan-u.ac.jp](mailto:k24rs110@st.kyusan-u.ac.jp)
+[runoaima98@gmail.com](mailto:runoaima98@gmail.com)
