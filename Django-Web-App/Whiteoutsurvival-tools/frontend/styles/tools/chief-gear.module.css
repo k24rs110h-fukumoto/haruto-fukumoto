@@ -1,0 +1,206 @@
+/* =====================================
+   Section Layout
+===================================== */
+.section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px 16px 48px;
+}
+
+.sectionTitle {
+    background: #4b3621;
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.section p {
+    font-size: 12px;
+    color: var(--ws-text-sub);
+    margin-bottom: 14px;
+}
+
+/* =====================================
+   Card / Frame
+===================================== */
+.card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 12px 14px;
+    border: 1px solid var(--ws-border);
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.08);
+}
+
+/* =====================================
+   Building List（FireCrystal同密度）
+===================================== */
+.buildingRow {
+    display: flex;
+    align-items: center;
+    padding: 6px 0;
+    border-top: 1px solid #e5e7eb;
+}
+
+.buildingRow:first-child {
+    border-top: none;
+}
+
+.buildingName {
+    width: 100px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--ws-text-main);
+}
+
+.buildingSelectors {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+/* =====================================
+   Level Selector（± + select）
+===================================== */
+.levelSelector {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.levelSelector button {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    border: none;
+    background: var(--ws-blue-soft);
+    color: var(--ws-blue);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.levelSelector button:hover {
+    background: #dbeafe;
+}
+
+.levelSelector select {
+    min-width: 90px;
+    height: 28px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid var(--ws-border);
+    background: #ffffff;
+}
+
+/* =====================================
+   Result Title
+===================================== */
+.resultTitle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--ws-text-main);
+    padding: 8px 12px;
+    margin: 20px 0 10px;
+    background: linear-gradient(90deg, #eff6ff, #ffffff);
+    border-left: 4px solid var(--ws-blue);
+    border-radius: 8px;
+}
+
+.resultTitle::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--ws-blue);
+}
+
+/* =====================================
+   Result Table
+===================================== */
+.resultTable {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid var(--ws-border);
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.08);
+}
+
+.resultTable thead th {
+    background: #f1f5f9;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 6px 4px;
+    border-bottom: 2px solid #e2e8f0;
+    text-align: center;
+}
+
+.resultTable tbody td {
+    font-size: 12px;
+    padding: 6px 4px;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: right;
+}
+
+.resultTable tbody td:first-child {
+    text-align: left;
+    font-weight: 600;
+    color: var(--ws-text-main);
+}
+
+.resultTable tbody tr:hover {
+    background: #f8fafc;
+}
+
+/* 合計行 */
+.resultTable tbody tr:last-child {
+    background: linear-gradient(90deg, #eef2ff, #e0e7ff);
+}
+
+.resultTable tbody tr:last-child td {
+    font-weight: 700;
+    color: #1e3a8a;
+    border-bottom: none;
+}
+
+/* =====================================
+   Mobile
+===================================== */
+@media (max-width: 768px) {
+
+    .section {
+        padding: 18px 12px 36px;
+    }
+
+    .buildingName {
+        width: 80px;
+        font-size: 12px;
+    }
+
+    .levelSelector select {
+        min-width: 70px;
+        font-size: 11px;
+    }
+
+    .resultTitle {
+        font-size: 14px;
+        padding: 7px 10px;
+    }
+
+    .resultTable thead th {
+        font-size: 10px;
+    }
+
+    .resultTable tbody td {
+        font-size: 11px;
+    }
+}
