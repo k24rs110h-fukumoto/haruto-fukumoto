@@ -19,8 +19,11 @@
 * TypeScript
 * PHP
 * SQL
-* C
+* C++
 * HTML / CSS
+* Java
+* R
+* Kotlin
 
 ### Frameworks & Technologies
 
