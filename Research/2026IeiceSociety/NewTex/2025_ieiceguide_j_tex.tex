@@ -1,0 +1,68 @@
+\documentclass[twocolumn,a4paper,dvipdfmx]{ieicejsp}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{textcomp}
+\usepackage{latexsym}
+%\usepackage[fleqn]{amsmath}
+%\usepackage{amssymb}
+\usepackage{float}
+\usepackage{graphicx}
+
+
+\title{{\bf Unityゲーム開発におけるWeb可視化のための設計情報JSON抽出システムの実装と評価}
+  {\normalsize \\Implementation and Evaluation of a Design Information JSON Extraction System for Web Visualization in Unity Game Development}}
+  \author{
+    福本陽翔$^1$ \\ Haruto Fukumoto\and
+    田中康一郎$^1$ \\ Koichiro Tanaka\\
+  }
+  \affliate{
+    九州産業大学$^1$\\
+    Kyushu Sangyo University．\\
+}
+
+
+\begin{document}
+\maketitle
+\section{まえがき}
+
+Unityを用いたゲーム開発では，プロジェクト規模の増大に伴い，スクリプト，Prefab，Sceneなどのアセット間の依存関係が複雑化する．本研究では，Unityプロジェクト内のアセット構造，スクリプト依存関係，Prefab構造およびScene構造を解析し，Web可視化に利用可能なNode/Edge形式のJSONとして出力するシステムを実装，評価する．
+
+\section{提案手法}
+
+提案システムはUnity Editor上で動作し，プロジェクト内のフォルダ，アセット，スクリプト，PrefabおよびSceneを解析対象とする．取得した情報はNodeおよびEdgeとして整理し，JSON形式で出力する．スクリプト解析では，クラス名，継承関係，インタフェース実装関係に加え，SerializeField属性，GetComponent，Instantiateなどの利用状況を解析し，スクリプト間の依存関係を抽出する．また，PrefabおよびScene解析ではGameObject階層とComponent構成を取得し，設計情報として記録する．さらに，同一フォルダ内のアセット群をモジュールとして扱い，プロジェクト構造を把握しやすい形式で整理する．
+
+\section{実装}
+
+本システムはC\#を用いて実装し，UnityのAssetDatabaseを利用してプロジェクト内の情報を取得した\cite{unity_assetdatabase}．フォルダおよびアセット解析では，AssetDatabase.FindAssetsによりGUID，ファイルパス，アセット種別を取得し，フォルダとアセットの包含関係をEdgeとして記録した．スクリプト解析では，MonoScriptクラスを用いてクラス情報を取得した\cite{unity_monoscript}．さらに，ソースコードをテキスト解析することで，SerializeField属性による参照関係やGetComponent，Instantiateなどの利用関係を抽出した．PrefabおよびScene解析では，GameObjectの階層構造とComponent構成を取得し，NodeおよびEdgeとして記録した．解析方式として，Full Scan，Lightweight Scan，Lazy Scene Scan，Differential Scanの4方式を実装した．Full Scanは全情報を解析する基準方式である．Lightweight ScanはSceneおよびPrefab内部構造の解析を省略する方式である．Lazy Scene ScanはScene内部構造の解析を遅延させる方式である．Differential Scanは前回解析結果をキャッシュとして利用し，変更がない場合に解析結果を再利用する方式である．
+
+\section{評価}
+
+規模の異なる3つのUnityプロジェクトを対象に評価を行った．評価対象は，Small，Medium，Largeの3種類とし，それぞれアセット数とスクリプト数は，18/5，1386/101，3073/313である．評価では，Full Scanを基準として，各解析方式の実行時間およびGraph Completeness（以下，GC）を比較した．GCは，Full Scanで得られたNode数およびEdge数に対する割合として算出した．
+
+\begin{table}[hbt]
+  \centering
+  \caption{解析方式ごとの実行時間とGC}
+  \label{tab:evaluation}
+  \vspace{4pt}
+  \begin{tabular}{c|rrrr|rrr}
+    \hline
+    &\multicolumn{4}{c|}{実行時間 [ms]} & \multicolumn{3}{c}{GC [\%]} \\
+     Project & Full & Light & Lazy & Diff & Light & Lazy & Diff \\
+    \hline
+    Small  & 837   & 46   & 205  & 31    & 61.3 & 61.3 & 100.0 \\
+    Medium & 2911  & 184  & 321  & 116   & 64.0 & 85.2 & 100.0 \\
+    Large  & 26485 & 5683 & 1518 & 24564 & 5.9  & 40.1 & 100.0 \\
+    \hline
+  \end{tabular}
+\end{table}
+
+表\ref{tab:evaluation}より，SmallおよびMediumではDifferential Scanが最も高速であった．SmallではFull Scanの837 msに対して31 ms，Mediumでは2911 msに対して116 msであり，いずれも約96\%の解析時間短縮を確認した．一方，LargeではFull Scanが26485 ms，Differential Scanが24564 msであり，大きな短縮効果は得られなかった．これは，変更アセット検出時に全体解析へ戻る現在の実装に起因すると考えられる．Lightweight Scanは高速であるが，PrefabおよびScene内部構造を省略するため，GCが低下した．特にLargeでは，Full Scanで33226個のNodeと150706個のEdgeを抽出したのに対し，Lightweight Scanでは3051個のNodeと3809個のEdgeにとどまり，GCは5.9\%であった．この結果から，大規模プロジェクトではPrefabおよびScene内部構造が設計情報の多くを占めると考えられる．また，Lazy Scene ScanはMediumにおいて321 msで85.2\%のGCを維持しており，概要把握に有効であることを確認した．
+
+
+\section{まとめ}
+
+評価の結果，Full Scanは完全な設計情報を取得できる一方で解析時間が増加し，Lightweight Scanは高速であるが情報量が減少することを確認した．また，Lazy Scene Scanは速度と情報量のバランスに優れ，Differential Scanは変更がない場合に完全性を維持したまま解析時間を短縮できた．今後は，変更アセットのみを部分的に再解析する方式を導入するとともに，出力したJSONをWeb上で可視化するシステムへ発展させる．
+
+\bibliographystyle{plain}
+\bibliography{Fukumoto}
+\end{document}

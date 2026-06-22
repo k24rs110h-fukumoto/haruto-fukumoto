@@ -1,0 +1,49 @@
+\documentclass[twocolumn,a4paper,dvipdfmx]{ieicejsp}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{textcomp}
+\usepackage{latexsym}
+%\usepackage[fleqn]{amsmath}
+%\usepackage{amssymb}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{url}
+
+
+\title{{\bf Unityゲーム開発におけるゲームシステム構造設計CADの検討}
+  {\normalsize \\A Study on a Game System Structure Design CAD for Unity Game Development}}
+  \author{
+    福本陽翔$^1$ \\ Haruto Fukumoto\and
+    田中康一郎$^1$ \\ Koichiro Tanaka\\
+  }
+  \affliate{
+    九州産業大学$^1$\\
+    Kyushu Sangyo University．\\
+}
+
+
+\begin{document}
+\maketitle
+\section{まえがき}
+Unityゲーム開発では，ゲームの規模が大きくなるにつれて，NPC，敵キャラクタ，アイテム，イベントなどの要素が増加し，ゲーム全体の設計および管理が複雑になる．特に，ゲーム開発初期段階において，各ゲームシステム間の関係や依存性を整理する手法は開発者の経験に依存することが多い．Unity公式や実務資料では，ScriptableObjectやEvent Channelなどの実装部品について整理されている\cite{unity2025scriptableobjectjp}．しかし，ゲームシステム全体を構造的に設計し，可視化するための統一的な手法は十分に整理されていない．そこで本研究では，公開されている複数のUnityゲームプロジェクトを分析し，ゲームシステム間の構造的な関係を抽出する．さらに，得られた知見を基に，ゲームシステムを回路図のように設計・可視化するゲームシステム構造設計CADについて検討する．
+
+
+\section{ゲームシステムとUnity実装の調査方法}
+本研究では，公開されている複数のUnityゲームプロジェクトを対象として，ゲームシステム間の構造的な関係を調査する．本研究では，ゲーム内の機能単位をゲームシステムと定義し，Player，NPC，Enemy，Item，Battle，Quest，Dialogue，Save，UIなどを対象とする．また，各ゲームシステムを実現するUnity実装要素として，Prefab，ScriptableObject，Scene，Component，Manager，Eventなどに着目する．各ゲームシステムがどのような実装要素によって構成され，他のゲームシステムとどのような関係を持つかを調査する．複数のUnityゲームプロジェクトを比較することで，共通するゲームシステム構造および依存関係を抽出する．対象とするプロジェクトは，公開されているUnityゲームプロジェクトのうち，Unityを用いて開発され，C\#を主要なプログラム言語とするものを対象とした．また，一定の利用実績を有するプロジェクトを選定するため，GitHubにおけるスター数およびフォーク数を指標として用いた．2026年6月時点における上位10件を分析対象とし，その一覧を表に示す．対象プロジェクトの選定方法については，複数のソフトウェアシステムを比較解析する研究\cite{ullmann2023visualising}を参考とした．
+
+
+\section{ゲームシステム構造設計CADモデル}
+前章の調査により，ゲームシステムには一定の構造的関係が存在することが確認された．例えば，QuestシステムはNPCやDialogueと関連し，BattleシステムはEnemyやUIと関連するなど，個々のシステムは独立して存在するのではなく，相互に依存しながらゲーム全体を構成している．一方，ソフトウェア開発ではUML，データベース設計ではER図，電子回路設計では回路図など，対象分野ごとに共通の設計記法が利用されているが，ゲームシステム全体を統一的に表現するための手法は十分に整理されていない．そこで本研究では，ゲームシステムを構成要素として表現し，各システム間の依存関係を接続線として表現するゲームシステム構造設計CADモデルを提案する．提案モデルでは，Player，NPC，Enemy，Battle，Quest，Dialogue，Item，Save，UIなどのゲームシステムを基本要素として定義し，ゲームシステム間の関係を構造的に記述する．また，各接続関係には，ゲームの成立に必要な関係や機能拡張のための関係など，接続の種類を定義することで，ゲーム全体の構造を俯瞰的に把握できるようにする．これにより，ゲームシステム間の関係を共通的な形式で記述し，開発者間での設計共有やゲーム全体の構造理解への活用を目指す．
+
+
+\section{CADモデルの利用例}
+提案モデルをRPGに適用した例について検討する．RPGでは，Playerを中心としてNPC，Enemy，Battle，Quest，Dialogue，Item，Save，UIなどのゲームシステムによって全体が構成される．例えば，QuestシステムはNPCやDialogueと関連し，BattleシステムはEnemyやUIと関連する．また，ゲームの進行状況を保持するためにSaveシステムとも接続される．このような関係を回路図的に表現することで，ゲームシステム全体の構造や各システム間の依存関係を視覚的に把握することが可能となる．さらに，ゲーム開発時の設計共有やゲームシステム構造の整理への活用が期待される．
+
+
+\section{まとめ}
+本研究では，公開されているUnityゲームプロジェクトを分析し，ゲームシステム間の構造的関係について調査した．また，調査結果を基に，ゲームシステムを統一的に記述するためのゲームシステム構造設計CADモデルを提案した．提案モデルでは，ゲームシステムを構成要素として定義し，各システム間の関係を構造的に表現することで，ゲーム全体の構造を可視化できる可能性を示した．今後は，対象とするゲームジャンルを拡大するとともに，提案モデルを利用した設計支援手法やUnity Editor上で利用可能なCADシステムの実装について検討する予定である．
+
+\bibliographystyle{plain}
+\bibliography{Fukumoto}
+
+\end{document}
