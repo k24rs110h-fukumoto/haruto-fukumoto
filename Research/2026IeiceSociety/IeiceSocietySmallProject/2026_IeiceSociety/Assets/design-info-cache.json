@@ -1,0 +1,112 @@
+{
+    "assets": [
+        {
+            "path": "Assets/Editor/DesignInfoEvaluator.cs",
+            "guid": "708edcddf66634b5abf0af01eac011bf",
+            "fileSize": 2800,
+            "lastWriteTime": "2026-06-22T20:44:02.3946186Z"
+        },
+        {
+            "path": "Assets/Editor/DesignInfoExporter.cs",
+            "guid": "b25cb901f3a5646409eb49e854c77e46",
+            "fileSize": 24254,
+            "lastWriteTime": "2026-06-22T20:44:02.3948866Z"
+        },
+        {
+            "path": "Assets/Editor/DesignInfoModels.cs",
+            "guid": "ee162e6bed04c4a8bb0da88019fbcee5",
+            "fileSize": 4628,
+            "lastWriteTime": "2026-06-22T20:44:02.3952906Z"
+        },
+        {
+            "path": "Assets/InputSystem_Actions.inputactions",
+            "guid": "052faaac586de48259a63d0c4782560b",
+            "fileSize": 41005,
+            "lastWriteTime": "2025-10-13T20:01:39.0000000Z"
+        },
+        {
+            "path": "Assets/MainScene.unity",
+            "guid": "6e886bbf16cc44e0bb09795fabf96551",
+            "fileSize": 11434,
+            "lastWriteTime": "2026-06-22T17:48:16.2900980Z"
+        },
+        {
+            "path": "Assets/Readme.asset",
+            "guid": "8105016687592461f977c054a80ce2f2",
+            "fileSize": 1144,
+            "lastWriteTime": "2025-10-13T20:01:39.0000000Z"
+        },
+        {
+            "path": "Assets/Scenes/SampleScene.unity",
+            "guid": "99c9720ab356a0642a771bea13969a05",
+            "fileSize": 11413,
+            "lastWriteTime": "2025-10-13T20:01:39.0000000Z"
+        },
+        {
+            "path": "Assets/Settings/DefaultVolumeProfile.asset",
+            "guid": "ab09877e2e707104187f6f83e2f62510",
+            "fileSize": 23987,
+            "lastWriteTime": "2025-10-13T20:01:39.0000000Z"
+        },
+        {
+            "path": "Assets/Settings/Mobile_Renderer.asset",
+            "guid": "65bc7dbf4170f435aa868c779acfb082",
+            "fileSize": 1713,
+            "lastWriteTime": "2025-10-13T20:01:39.0000000Z"
+        },
+        {
+            "path": "Assets/Settings/Mobile_RPAsset.asset",
+            "guid": "5e6cbd92db86f4b18aec3ed561671858",
+            "fileSize": 4345,
+            "lastWriteTime": "2025-10-13T20:01:39.0000000Z"
+        },
+        {
+            "path": "Assets/Settings/PC_Renderer.asset",
+            "guid": "f288ae1f4751b564a96ac7587541f7a2",
+            "fileSize": 3439,
+            "lastWriteTime": "2025-10-13T20:01:39.0000000Z"
+        },
+        {
+            "path": "Assets/Settings/PC_RPAsset.asset",
+            "guid": "4b83569d67af61e458304325a23e5dfd",
+            "fileSize": 4364,
+            "lastWriteTime": "2025-10-13T20:01:39.0000000Z"
+        },
+        {
+            "path": "Assets/Settings/SampleSceneProfile.asset",
+            "guid": "10fc4df2da32a41aaa32d77bc913491c",
+            "fileSize": 3703,
+            "lastWriteTime": "2025-10-13T20:01:39.0000000Z"
+        },
+        {
+            "path": "Assets/Settings/UniversalRenderPipelineGlobalSettings.asset",
+            "guid": "18dc0cd2c080841dea60987a38ce93fa",
+            "fileSize": 21651,
+            "lastWriteTime": "2026-06-22T11:07:55.8718828Z"
+        },
+        {
+            "path": "Assets/TutorialInfo/Icons/URP.png",
+            "guid": "727a75301c3d24613a3ebcec4a24c2c8",
+            "fileSize": 24069,
+            "lastWriteTime": "2025-10-13T20:01:39.0000000Z"
+        },
+        {
+            "path": "Assets/TutorialInfo/Layout.wlt",
+            "guid": "eabc9546105bf4accac1fd62a63e88e6",
+            "fileSize": 15479,
+            "lastWriteTime": "2025-10-13T20:01:39.0000000Z"
+        },
+        {
+            "path": "Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs",
+            "guid": "476cc7d7cd9874016adc216baab94a0a",
+            "fileSize": 6677,
+            "lastWriteTime": "2025-10-13T20:01:39.0000000Z"
+        },
+        {
+            "path": "Assets/TutorialInfo/Scripts/Readme.cs",
+            "guid": "fcf7219bab7fe46a1ad266029b2fee19",
+            "fileSize": 302,
+            "lastWriteTime": "2025-10-13T20:01:39.0000000Z"
+        }
+    ]
+}
