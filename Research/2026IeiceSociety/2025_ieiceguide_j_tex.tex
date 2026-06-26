@@ -1,0 +1,95 @@
+\documentclass[twocolumn,a4paper,dvipdfmx]{ieicejsp}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{textcomp}
+\usepackage{latexsym}
+%\usepackage[fleqn]{amsmath}
+%\usepackage{amssymb}
+%\usepackage{float}
+\usepackage{graphicx}
+\usepackage{xfp}
+
+\title{{\bf Unityプロジェクト構造情報のJSON化における解析時間の評価}
+  {\normalsize \\Evaluation of Parsing Time for Converting Unity Project Structure Information into JSON}}
+  \author{
+    福本陽翔 \\ Haruto Fukumoto\and
+    嶺田あんず \\ Anzu Mineda\and
+    田中康一郎\\ Koichiro Tanaka\\
+  }
+  \affliate{
+    九州産業大学\\
+    Kyushu Sangyo Univ．\\
+}
+
+\begin{document}
+\maketitle
+\section{まえがき}
+Unityを用いたゲーム開発では，プロジェクトの大規模化に伴い，設計情報や要素間の関係が複雑化する．近年，Unity EditorとAIアシスタントを接続し，状態情報を利用してUnity操作を支援する研究も行われている\cite{mcp_unity}．このように，Unity内部の構造情報を外部システムで扱える形式に変換することは，開発支援において重要である．そこで本研究では，Unityプロジェクトの構造可視化システムの実現に向けてプロジェクト内のデータを解析し，構造情報をJSONで出力するシステムを構築した．また，実運用を想定して異なるプロジェクトに対して解析を行い，構造規模と解析時間の関係を評価する．
+
+
+\section{システムの実装}
+Unityでは，ゲームの素材である画像，音声，制御プログラム（Scripts），再利用可能な構造（Prefab），画面構成（Scene）などをAssetとして管理している．Asset内の情報抽出にはUnityが提供しているAssetDatabaseを用いた．Script解析では，MonoScriptによりクラス名，名前空間，基底クラス，インタフェースなどのクラス情報を取得し，ソースコード中の代表的な参照記述を抽出することで，Scriptと関連要素の関係をEdgeとして出力した．また，PrefabおよびScene解析では，画面や再利用部品に含まれる配置要素と，それらに付加された機能をNodeとし，要素間の親子関係や機能の保持関係をEdgeとして出力した．これにより，Unityプロジェクト内の要素同士の関係をJSONで出力できる．
+
+
+\section{評価と考察}
+本システムの運用可能性を確認するため，規模および構成の異なるUnityプロジェクトに対して本システムを実装した．評価対象には，筆者が作成したプロジェクトに加え，GitHub等で公開されているUnityプロジェクトを用いた．評価対象を表\ref{tab:target_projects}に示す．本評価で用いた公開プロジェクトは，Git上に公開されている，open-project-1\cite{unity_open_project1}，Red Runner\cite{red_runner}，street-racing-unity\cite{street_racing_unity}，3D Game Kit Lite\cite{unity_3d_gamekit_lite}である．
+\begin{table}[hbt] 
+  \centering 
+  \caption{評価対象プロジェクト} 
+  \label{tab:target_projects} 
+  \vspace{4pt} 
+  \scriptsize 
+  \setlength{\tabcolsep}{2.0pt} 
+  \resizebox{\linewidth}{!}{ 
+  \begin{tabular}{c|l|rrrrrrr} 
+    \hline 
+    Project & Repository & Asset & Script & Prefab & Scene & GameObject & Component \\
+    \hline
+    P1  & Original-Small & 17 & 4 & 0 & 2 & 6 & 18  \\
+    P2  & Original-RPG & 1,385 & 100 & 11 & 10 & 421 & 1306 \\
+    P3  & Original-3D-RPG & 69 & 18 & 1 & 1 & 190 & 372 \\
+    P4  & open-project-1 & 3,211 & 348 & 486 & 81 & 53,106 & 129,605 \\
+    P5  & RedRunner & 678 & 93 & 104 & 8 & 3,826 & 10,503 \\
+    P6  & street-racing-unity & 297 & 22 & 91 & 3 & 1,775 & 4,816 \\
+    P7 & 3D-GameKit-Lite & 1190 & 464 & 53 & 29 & 8,636 & 14,642 \\
+    \hline
+  \end{tabular}
+  }
+\end{table}
+
+ 
+表\ref{tab:fullscan_result}より，現行システムは小規模から中規模のUnityプロジェクトでは，今回の方式のままでも実用可能であると考えられる．特に，Component数が1万程度までのプロジェクトでは，設計情報を一括取得する処理として許容できる範囲であった．一方で，Component数がさらに増加し，SceneやPrefabに多くのGameObjectを含む規模になると，解析時間が大きく増加する傾向が見られた．これは，本システムが Scene および Prefab 内部の階層構造を再帰的に解析するためである．特に，GameObject に付加された Component 情報の取得回数が増加することで，解析処理全体の負荷が高くなったと考えられる．したがって，現行システムは中規模程度までの構造把握には有効であるが，大規模プロジェクトでは初回のみ前走査を行い，2回目以降は変更されたAssetや必要なSceneのみを対象とする差分解析方式が必要であると考えられる．
+
+\begin{table}[hbt] 
+  \centering 
+  \caption{全解析による解析時間 [ms]} 
+  \label{tab:fullscan_result} 
+  \vspace{4pt} 
+  \scriptsize 
+  \setlength{\tabcolsep}{2.0pt} 
+  \resizebox{\linewidth}{!}{ 
+  \begin{tabular}{c|rrrrrrrrr} 
+  \hline 
+  Project & P1 & P2 & P3 & P4 & P5 & P6 & P7 \\
+  \hline
+  平均 & \fpeval{((601+598+574+582+582+583+586+584+585+584)/10)} 
+  & \fpeval{round((2831+3097+2873+2824+2786+2832+2835+2786+2795+2815)/10)} 
+  & \fpeval{round((501+479+486+489+488+490+493+493+493+493)/10)} 
+  & \fpeval{round((106816+58659+62292+66593+69089+72507+45153+46922+52177+55613)/10)}
+  & \fpeval{round((1798+1902+1883+1889+1907+2076+2102+2134+1960+1935)/10)} 
+  & \fpeval{round((1306+1191+1177+1177+1187+1184+1192+1189+1191+1187)/10)}
+  & \fpeval{round((16742+19936+19508+18882+20017+19873+19356+19878+19776+19673)/10)} \\
+  最大値  & 598 & 3097 & 501 & 106816 & 2102 & 1306 & 20017 \\
+  最小値  & 574 & 2786 & 479 & 45153 & 1798 & 1177 & 16742 \\
+  \hline
+  \end{tabular} 
+  } 
+\end{table} 
+ 
+\section{まとめ}
+本研究では，Unityプロジェクトの構造可視化支援を目的として，プロジェクト内の設計情報を解析し，Node/Edge形式を含むJSONとして出力する解析システムを実装した．本システムにより，Asset間の依存関係，Script情報，PrefabおよびScene内のGameObject階層，Component構成を取得し，外部システムで扱いやすい構造情報として変換できることを確認した．評価の結果，解析時間はAsset数のみに単純比例せず，PrefabやSceneに含まれるGameObject数およびComponent数の影響を大きく受けることが分かった．今後は，出力したJSONを用いたWeb上での可視化機能を実装し，構造把握支援としての有効性を評価する．また，大規模プロジェクトへの適用を考慮し，変更部分のみを対象とする差分解析方式による解析時間の短縮を検討する．
+
+\bibliographystyle{unsrt}
+\bibliography{Fukumoto}
+
+\end{document}
