@@ -16,7 +16,7 @@ struct ContentView: View {
     var body: some View{
         TabView {
             // カレンダーページ
-            SelfIntroductionView()
+            SchedulesView()
                 .tabItem {
                     Image(systemName: "person")
                     Text("自己紹介")

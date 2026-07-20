@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct SelfIntroductionView: View {
+struct SchedulesView: View {
 
     @State private var selectedPopup: PopupItem?
 
